@@ -4,9 +4,9 @@ import com.sparta.memo.entity.Memo;
 import com.sparta.memo.repository.MemoRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import org.junit.Test;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
@@ -19,7 +19,7 @@ public class TransactionTest {
     EntityManager em;
 
     @Autowired
-    MemoRepository memoRepository;
+    MemoRepository memoRepository ;
 
     @Test
     @Transactional
